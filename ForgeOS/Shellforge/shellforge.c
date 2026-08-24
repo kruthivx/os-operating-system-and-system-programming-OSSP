@@ -36,18 +36,18 @@ int main(void)
             break;
         }
 
-        char *args[MAX_ARGS];
-        int argc = 0;
+       char *args[MAX_ARGS];
+int argc = 0;
 
-        char *token = strtok(input, " \t");
+char *token = strtok(input, " \t");
 
-        while (token != NULL && argc < MAX_ARGS - 1)
-        {
-            args[argc++] = token;
-            token = strtok(NULL, " ");
-        }
+while (token != NULL && argc < MAX_ARGS - 1)
+{
+    args[argc++] = token;
+    token = strtok(NULL, " ");
+}
 
-        args[argc] = NULL;
+args[argc] = NULL;
 
         pid_t pid = fork();
 
