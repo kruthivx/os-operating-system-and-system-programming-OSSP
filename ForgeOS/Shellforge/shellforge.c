@@ -39,7 +39,7 @@ int main(void)
         char *args[MAX_ARGS];
         int argc = 0;
 
-        char *token = strtok(input, " ");
+        char *token = strtok(input, "\t");
 
         while (token != NULL && argc < MAX_ARGS - 1)
         {
